@@ -17,8 +17,8 @@ public class QuizService {
 
     private  List<Quiz> quizzes = new ArrayList<>();
 
-    public void addQuiz (String subject, String theme){
-        quizzes.add(new Quiz(subject, theme));
+    public void addQuiz (String subject, String theme, String author){
+        quizzes.add(new Quiz(subject, theme, author));
     }
 
     public List getQuizList (){
