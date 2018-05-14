@@ -43,6 +43,10 @@ public class QuizTmp {
         listOfQuestions.add(question);
     }
 
+    public List<Question> getListOfQuestions() {
+        return listOfQuestions;
+    }
+
     @Override
     public String toString() {
         return "QuizTmp{" +

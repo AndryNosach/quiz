@@ -1,6 +1,8 @@
 package servlet;
 
+import entity.Subject;
 import service.QuizService;
+import service.SubjectService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 public class QuizAddServlet extends HttpServlet {
 
@@ -15,8 +18,12 @@ public class QuizAddServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            RequestDispatcher rd = req.getRequestDispatcher("/view/quiz.jsp");
-            rd.forward(req, resp);
+
+        List<Subject> subjects = new SubjectService().getAllSubjects();
+        req.setAttribute("subjects", subjects);
+
+        RequestDispatcher rd = req.getRequestDispatcher("/view/quiz.jsp");
+        rd.forward(req, resp);
     }
 
     @Override

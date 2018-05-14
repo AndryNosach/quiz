@@ -1,9 +1,6 @@
 package filters;
 
 
-import dao.DBConnector;
-import dao.UserDAO;
-import dao.UserDAOImpl;
 import entity.User;
 import org.apache.log4j.Logger;
 import service.UserService;
@@ -12,10 +9,7 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.sql.*;
 
 
 public class AuthorizationFilter implements Filter{

@@ -1,5 +1,6 @@
 package dao;
 
+import dao.connector.DBConnector;
 import entity.User;
 import org.apache.log4j.Logger;
 

@@ -4,10 +4,12 @@ public class Answer {
 
     private String answer;
     private boolean correctness;
+    private int questionId;
 
-    public Answer(String answer, boolean correctness) {
+    public Answer(String answer, boolean correctness, int quiestionId) {
         this.answer = answer;
         this.correctness = correctness;
+        this.questionId = quiestionId;
     }
 
     public String getAnswer() {
@@ -18,12 +20,16 @@ public class Answer {
         this.answer = answer;
     }
 
-    public boolean isCorrectness() {
+    public boolean isCorrect() {
         return correctness;
     }
 
     public void setCorrectness(boolean correctness) {
         this.correctness = correctness;
+    }
+
+    public int getQuestionId() {
+        return questionId;
     }
 
     @Override

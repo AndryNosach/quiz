@@ -12,10 +12,6 @@ public class Subject {
         return subjectName;
     }
 
-    public void setSubjectName(String subject_name) {
-        this.subjectName = subject_name;
-    }
-
     @Override
     public String toString() {
         return "Subject{" +
