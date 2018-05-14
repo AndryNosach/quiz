@@ -41,10 +41,11 @@
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>#</th>
                         <th>Subject</th>
                         <th>Theme</th>
                         <th>Author</th>
+                        <th>Action</th>
 
                     </tr>
                     </thead>
@@ -56,6 +57,19 @@
                                 <td>${quiz.getSubject().getSubjectName()}</td>
                                 <td>${quiz.getTheme()}</td>
                                 <td>${quiz.getAuthor()}</td>
+                                <td>
+                                    <a  class="delete${id}" href="list">Delete</a>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".delete${id}").click(function () {
+                                                    $.ajax({
+                                                        type: "delete",
+                                                        url:"/delete?id=${quiz.getId()}"
+                                                    })
+                                                })
+                                            })
+                                        </script>
+                                </td>
                                 <c:set var="id" scope="page" value="${id+1}"/>
                              </tr>
                         </c:forEach>

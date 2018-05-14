@@ -64,7 +64,12 @@ h2 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.btn{
+    font-size: inherit;
+}
 .form-control {
+    font-size: inherit;
     min-height: 41px;
     box-shadow: none;
     border-color: #e6e6e6;

@@ -88,11 +88,15 @@ public class QuizDAOImpl implements QuizDAO {
             }
             else {
                 Subject subj = ss.getSubject(rs.getInt("subjects_id"));
-                listOfQuizzies.add(new Quiz(subj, rs.getString("theme"), rs.getString("author")));
+                Quiz quiz= new Quiz(subj, rs.getString("theme"), rs.getString("author"));
+                quiz.setId(rs.getInt("id"));
+                listOfQuizzies.add(quiz);
 
                 while (rs.next()){
                     subj = ss.getSubject(rs.getInt("subjects_id"));
-                    listOfQuizzies.add(new Quiz(subj, rs.getString("theme"), rs.getString("author")));
+                    quiz= new Quiz(subj, rs.getString("theme"), rs.getString("author"));
+                    quiz.setId(rs.getInt("id"));
+                    listOfQuizzies.add(quiz);
                 }
 
                 return listOfQuizzies;
@@ -102,5 +106,21 @@ public class QuizDAOImpl implements QuizDAO {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    public void deleteQuiz(int id) {
+        Connection con = DBConnector.getConnection();
+
+        try {
+            String query = "DELETE from quizzies WHERE id=?";
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setInt(1, id);
+
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -47,9 +47,14 @@ public class QuizBuilder {
         //1. Saving Subject to db
 
        Subject subj = new Subject(this.subject);
-       SubjectService sd = new SubjectService();
-       logger.info("Saving subject "+subject+" to db");
-       int subjId = sd.addSubject(subj);
+       SubjectService ss = new SubjectService();
+
+       //check Subject for uniqueness
+       int subjId =ss.getIdByName(subject);
+       if(subjId == -1){
+           logger.info("Saving subject "+subject+" to db");
+           subjId = ss.addSubject(subj);
+       }
 
        //2. Saving Quiz
        Quiz quiz = new Quiz(subj, theme, author);

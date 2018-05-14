@@ -1,13 +1,12 @@
 package entity;
 
-import java.util.List;
 
 public class Quiz {
 
     private Subject subject;
     private String theme;
     private String author;
-    private List<Question> listOfQuestions;
+    private int id = -1; //-1 means id was not set
 
     public Quiz(Subject subject, String theme, String author) {
         this.subject = subject;
@@ -39,12 +38,12 @@ public class Quiz {
         this.author = author;
     }
 
-    public void addQuestion(Question question){
-        listOfQuestions.add(question);
+    public int getId() {
+        return id;
     }
 
-    public List<Question> getListOfQuestions() {
-        return listOfQuestions;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

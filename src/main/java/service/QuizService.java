@@ -23,4 +23,9 @@ public class QuizService {
         return qd.getAllQuizzies();
     }
 
+    public void deleteQuiz (int id){
+        QuizDAO qd = new QuizDAOImpl();
+        qd.deleteQuiz(id);
+    }
+
 }

@@ -12,4 +12,6 @@ public interface QuizDAO {
 
     public List<Quiz> getAllQuizzies();
 
+    public void deleteQuiz(int id);
+
 }

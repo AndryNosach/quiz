@@ -1,6 +1,8 @@
 package servlet;
 
 import entity.User;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import service.UserService;
 
 import javax.servlet.ServletException;
@@ -27,7 +29,8 @@ public class RegisterServlet extends HttpServlet {
 
 
         UserService us = new UserService();
-        us.addUser(new User(login, pass, name, email));
+        PasswordEncoder encoder = new BCryptPasswordEncoder();
+        us.addUser(new User(login, encoder.encode(pass), name, email));
 
         req.getSession().setAttribute("login", login);
         req.getSession().setAttribute("authorized", "true");

@@ -17,6 +17,9 @@ public class QuizDeleteServlet extends HttpServlet {
 
         int id = Integer.parseInt(req.getParameter("id"));
 
+        QuizService qs = new QuizService();
+        qs.deleteQuiz(id);
+
         resp.sendRedirect("/list");
     }
 

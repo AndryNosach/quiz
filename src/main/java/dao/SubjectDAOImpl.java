@@ -64,29 +64,6 @@ public class SubjectDAOImpl implements SubjectDAO{
         return null;
     }
 
-    @Override
-    public int getIdByName(String subjectName) {
-        Connection  conn = DBConnector.getConnection();
-
-        try {
-            String query = "SELECT id FROM subjects WHERE subject= ?";
-            PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, subjectName);
-
-            ResultSet rs = ps.executeQuery();
-
-            if (!rs.next()) {
-                return -1;
-            }
-            else {
-                return rs.getInt("id");
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return -1;
-    }
 
     @Override
     public List<Subject> getAllSubjects() {
@@ -115,5 +92,29 @@ public class SubjectDAOImpl implements SubjectDAO{
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    public int getIdByName(String subj) {
+        Connection  conn = DBConnector.getConnection();
+
+        try {
+            String query = "SELECT id FROM subjects WHERE subject= ?";
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setString(1, subj);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (!rs.next()) {
+                return -1;
+            }
+            else {
+                return rs.getInt("id");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 }

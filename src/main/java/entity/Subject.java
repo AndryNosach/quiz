@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Objects;
+
 public class Subject {
 
     private String subjectName;
@@ -17,5 +19,19 @@ public class Subject {
         return "Subject{" +
                 "subject_name='" + subjectName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Subject subject = (Subject) o;
+        return Objects.equals(subjectName, subject.subjectName);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(subjectName);
     }
 }

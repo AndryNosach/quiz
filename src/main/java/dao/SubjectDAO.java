@@ -8,6 +8,6 @@ public interface SubjectDAO {
 
     public int addSubject(Subject subject);
     public Subject getSubject(int id);
-    public int getIdByName(String subjectName);
     public List<Subject> getAllSubjects();
+    public int getIdByName(String subj);
 }

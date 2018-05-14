@@ -3,6 +3,8 @@ package filters;
 
 import entity.User;
 import org.apache.log4j.Logger;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import service.UserService;
 
 import javax.servlet.*;
@@ -84,7 +86,8 @@ public class AuthorizationFilter implements Filter{
                 return false;
             }
 
-        if (user.getPassword().equals(pass)) {
+        PasswordEncoder encoder= new BCryptPasswordEncoder();
+        if (encoder.matches(pass, user.getPassword())) {
                 logger.info("User "+login+" found in db and authorized ");
                 request.getSession().setAttribute("authorized", "true");
                 return true;
