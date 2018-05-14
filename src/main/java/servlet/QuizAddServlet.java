@@ -28,11 +28,8 @@ public class QuizAddServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String subject = req.getParameter("subject");
-        String theme = req.getParameter("theme");
-        String author = req.getSession().getAttribute("login").toString();
-        ts.addQuiz(subject, theme, author);
-        resp.sendRedirect("list");
-        return;
+
+        RequestDispatcher rd = req.getRequestDispatcher("/view/questions-page.jsp");
+        rd.forward(req, resp);
     }
 }
