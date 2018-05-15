@@ -3,11 +3,15 @@
 
 <head>
     <title>Add Quiz</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css"
           rel="stylesheet"
           href="${pageContext.request.contextPath}/resources/css/question-page.css">
-    <script src="${pageContext.request.contextPath}/resources/js/question-page.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/questions-page.js"></script>
 </head>
 <body>
 
@@ -41,64 +45,69 @@
                     <h2>Add new Quize</h2>
                     <hr>
                     <h4>Enter question</h4>
-                    <!-- HIDDEN DYNAMIC ELEMENT TO CLONE -->
-                    <!-- you can replace it with any other elements -->
-                    <div class="form-group dynamic-element" style="display:none">
-                        <div class="row">
-                            <div class="col-md-2"></div>
-
-                            <!-- Replace these fields -->
-                            <div class="col-md-4">
-                                <select id="profesor" name="profesor[]" class="form-control">
-                                    <option value="1">Profesor</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <select id="rol" name="rol[]" class="form-control">
-                                    <option>Rol</option>
-                                    <option value="1">Guia</option>
-                                    <option value="2">Co-Guia</option>
-                                    <option value="3">Presidente</option>
-                                    <option value="4">Invitado</option>
-                                </select>
-                            </div>
-                            <!-- End of fields-->
-                            <div class="col-md-1">
-                                <p class="delete">x</p>
+                    <div class="container">
+                        <input type="text" name='question'  placeholder='Question' class="form-control"/>
+                    </div>
+                    <hr>
+                    <h4>Enter answers</h4>
+                    <div class="container">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <table class="table table-bordered table-hover" id="tab_logic">
+                                    <thead>
+                                    <tr >
+                                        <th class="text-center">
+                                            #
+                                        </th>
+                                        <th class="text-center">
+                                            Answer
+                                        </th>
+                                        <th class="text-center">
+                                            True/False
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr id='addr0'>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <input type="text" name='answer0'  placeholder='Name' class="form-control"/>
+                                        </td>
+                                        <td>
+                                            <div class="col-md-4">
+                                                    <div class="checkbox checkbox-primary">
+                                                        <input id="checkbox0" type="checkbox" >
+                                                        <label for="checkbox0">
+                                                            check if true
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr1'></tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                        <a id='delete_row' class="pull-left" href="#">Delete</a><a id="add_row" class="pull-right" href="#">Add</a>
                     </div>
-                    <!-- END OF HIDDEN ELEMENT -->
+                    <hr>
+                    <div class="container">
+
+                        <div class="col-xs-6 text-left">
+                                <button type="button" class="btn btn-default btn-lg">
+                                    Save Quiz
+                                </button>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                                <button type="button" class="btn btn-default btn-lg">
+                                    Add Question
+                                </button>
+                        </div>
 
 
-
-
-
-                    <div class="form-container">
-                        <form class="form-horizontal">
-                            <fieldset>
-                                <!-- Form Name -->
-                                <legend class="title">Comisión</legend>
-
-                                <div class="dynamic-stuff">
-                                    <!-- Dynamic element will be cloned here -->
-                                    <!-- You can call clone function once if you want it to show it a first element-->
-                                </div>
-
-                                <!-- Button -->
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="add-one">+ Añadir Profesor</p>
-                                        </div>
-                                        <div class="col-md-5"></div>
-                                        <div class="col-md-6">
-                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar Comisión</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
                     </div>
                 </form>
             </div>
@@ -108,8 +117,6 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

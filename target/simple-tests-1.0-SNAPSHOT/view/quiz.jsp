@@ -40,18 +40,21 @@
                     <h2>Add new Quize</h2>
                     <hr>
                     <h4>Input subject</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
+                    <div class="container">
+                        <h6>choose existing subject</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <c:forEach var="subject" items="${subjects}">
+                                    <option>${subject.getSubjectName()}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
                     </div>
                     <div class="container">
-                        <h6>Or choose existing subject</h6>
-                            <div class="form-group">
-                                <select class="form-control" id="sel1">
-                                    <c:forEach var="subject" items="${subjects}">
-                                        <option>${subject.getSubjectName()}</option>
-                                    </c:forEach>
-                                </select>
-                            </div>
+                        <h6>Or enter new subject</h6>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
+                        </div>
                     </div>
                     <hr>
                     <h4>Input quiz theme</h4>
