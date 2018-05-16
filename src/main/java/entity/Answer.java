@@ -4,12 +4,10 @@ public class Answer {
 
     private String answer;
     private boolean correctness;
-    private int questionId;
 
-    public Answer(String answer, boolean correctness, int quiestionId) {
+    public Answer(String answer, boolean correctness) {
         this.answer = answer;
         this.correctness = correctness;
-        this.questionId = quiestionId;
     }
 
     public String getAnswer() {
@@ -28,9 +26,6 @@ public class Answer {
         this.correctness = correctness;
     }
 
-    public int getQuestionId() {
-        return questionId;
-    }
 
     @Override
     public String toString() {

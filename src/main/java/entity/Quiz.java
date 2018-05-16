@@ -1,25 +1,25 @@
 package entity;
 
+import java.util.List;
+
 public class Quiz {
-    private static int  serial = 0;
-    private int id;
-    private String subject;
+
+    private Subject subject;
     private String theme;
     private String author;
+    private List<Question> listOfQuestions;
 
-    public Quiz(String subject, String theme, String author) {
+    public Quiz(Subject subject, String theme, String author) {
         this.subject = subject;
         this.theme = theme;
         this.author = author;
-        id = serial++;
     }
 
-
-    public String getSubject() {
+    public Subject getSubject() {
         return subject;
     }
 
-    public void setSubject(String subject) {
+    public void setSubject(Subject subject) {
         this.subject = subject;
     }
 
@@ -31,19 +31,28 @@ public class Quiz {
         this.theme = theme;
     }
 
-    public String getAuthor() { return author; }
+    public String getAuthor() {
+        return author;
+    }
 
-    public void setAuthor(String author) { this.author = author; }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-    public int getId() {
-        return id;
+    public void addQuestion(Question question){
+        listOfQuestions.add(question);
+    }
+
+    public List<Question> getListOfQuestions() {
+        return listOfQuestions;
     }
 
     @Override
     public String toString() {
         return "Quiz{" +
-                "subject='" + subject + '\'' +
+                "subject=" + subject +
                 ", theme='" + theme + '\'' +
+                ", author='" + author + '\'' +
                 '}';
     }
 }

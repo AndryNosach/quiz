@@ -41,12 +41,12 @@
 
 
             <div class="signup-form">
-                <form action="/add" method="post">
+                <form action="/question" method="post">
                     <h2>Add new Quize</h2>
                     <hr>
-                    <h4>Enter question</h4>
+                    <h4>Enter question №${questionsCount+1}</h4>
                     <div class="container">
-                        <input type="text" name='question'  placeholder='Question' class="form-control"/>
+                        <input type="text" name='question'  placeholder='Example: What day is today?' class="form-control" required="required"/>
                     </div>
                     <hr>
                     <h4>Enter answers</h4>
@@ -73,12 +73,12 @@
                                             1
                                         </td>
                                         <td>
-                                            <input type="text" name='answer0'  placeholder='Name' class="form-control"/>
+                                            <input type="text" name='answer0'  placeholder='Answer' class="form-control" required="required"/>
                                         </td>
                                         <td>
                                             <div class="col-md-4">
                                                     <div class="checkbox checkbox-primary">
-                                                        <input id="checkbox0" type="checkbox" >
+                                                        <input name="check0" id="checkbox0" type="checkbox" >
                                                         <label for="checkbox0">
                                                             check if true
                                                         </label>
@@ -96,15 +96,18 @@
                     <hr>
                     <div class="container">
 
+                        <input type="hidden" name="questionsCount" value="${questionsCount}">
+
                         <div class="col-xs-6 text-left">
-                                <button type="button" class="btn btn-default btn-lg">
-                                    Save Quiz
-                                </button>
+                            <button type="submit" name="save" value="Save Button" class="btn btn-default btn-lg">
+                                Save Quiz
+                            </button>
+
                         </div>
                         <div class="col-xs-6 text-right">
-                                <button type="button" class="btn btn-default btn-lg">
-                                    Add Question
-                                </button>
+                            <button type="submit" name ="add" value ="Add Button" class="btn btn-default btn-lg">
+                                Add Question
+                            </button>
                         </div>
 
 

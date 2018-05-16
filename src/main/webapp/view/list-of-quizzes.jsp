@@ -45,29 +45,18 @@
                         <th>Subject</th>
                         <th>Theme</th>
                         <th>Author</th>
-                        <th>Action</th>
+
                     </tr>
                     </thead>
                     <tbody>
+                    <c:set var = "id" scope = "page" value = "${1}"/>
                         <c:forEach var="quiz" items="${quizzes}">
                             <tr>
-                                 <td>${quiz.id}</td>
-                                 <td>${quiz.subject}</td>
-                                <td>${quiz.theme}</td>
-                                 <td>${quiz.author}</td>
-                                 <td>
-                                     <a  class="delete${quiz.id}" href="list">Delete</a>
-                                     <script>
-                                         $(document).ready(function () {
-                                             $(".delete${quiz.id}").click(function () {
-                                                 $.ajax({
-                                                     type: "delete",
-                                                     url:"/delete?id=${quiz.id}"
-                                             })
-                                             })
-                                         })
-                                     </script>
-                                 </td>
+                                <td>${id} </td>
+                                <td>${quiz.getSubject().getSubjectName()}</td>
+                                <td>${quiz.getTheme()}</td>
+                                <td>${quiz.getAuthor()}</td>
+                                <c:set var="id" scope="page" value="${id+1}"/>
                              </tr>
                         </c:forEach>
                     </tbody>

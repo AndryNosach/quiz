@@ -10,9 +10,9 @@ import java.util.List;
 
 public class AnswerService {
 
-    public int addAnswer(Answer answer) {
+    public int addAnswer(Answer answer, int questId) {
         AnswerDAO ad = new AnswerDAOImpl();
-        return ad.addAnswer(answer);
+        return ad.addAnswer(answer, questId);
     }
 
     public Answer getAnswer(int id) {

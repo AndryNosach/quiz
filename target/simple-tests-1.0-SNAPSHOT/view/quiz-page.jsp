@@ -43,7 +43,8 @@
                     <div class="container">
                         <h6>choose existing subject</h6>
                         <div class="form-group">
-                            <select class="form-control" id="sel1">
+                            <select class="form-control" id="sel1" name = "subjectList">
+                                <option></option>>
                                 <c:forEach var="subject" items="${subjects}">
                                     <option>${subject.getSubjectName()}</option>
                                 </c:forEach>
@@ -53,7 +54,7 @@
                     <div class="container">
                         <h6>Or enter new subject</h6>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
+                            <input type="text" class="form-control" name="subjectInput" placeholder="Subject" >
                         </div>
                     </div>
                     <hr>

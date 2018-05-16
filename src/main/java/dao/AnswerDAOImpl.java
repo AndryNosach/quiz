@@ -2,6 +2,7 @@ package dao;
 
 import dao.connector.DBConnector;
 import entity.Answer;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,32 +10,36 @@ import java.util.List;
 
 public class AnswerDAOImpl implements AnswerDAO {
 
+    private static final Logger logger = Logger.getLogger(QuestionDAOImpl.class);
+
     @Override
-    public int addAnswer(Answer answer) {
+    public int addAnswer(Answer answer, int questionId) {
         Connection con = DBConnector.getConnection();
         try {
             String query = "INSERT into answers (answer, correct, question_id) VALUES (?, ?, ?)";
-            PreparedStatement ps = con.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, answer.getAnswer());
             ps.setBoolean(2, answer.isCorrect());
-            ps.setInt(3, answer.getQuestionId());
+            ps.setInt(3, questionId);
 
 
             ps.executeUpdate();
+            ResultSet rs = ps.getGeneratedKeys();
+
+            int answerId = -1;
+            if(rs.next())
+            {
+                answerId = rs.getInt(1);
+            }
+
+            logger.info("Inserted answer, id ="+ answerId);
+
+            return answerId;
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        try (Statement stmt = con.createStatement()) {
-
-            ResultSet rs = stmt.executeQuery("SELECT LAST_INSERT_ID()");
-            return rs.getInt("LAST_INSERT_ID()");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return -1;
     }
 
     @Override
@@ -53,8 +58,7 @@ public class AnswerDAOImpl implements AnswerDAO {
             }
             else {
                 return new Answer(rs.getString("answer"),
-                                    rs.getBoolean("correct"),
-                                    rs.getInt("question_id"));
+                                    rs.getBoolean("correct"));
             }
 
         } catch (SQLException e) {
@@ -80,10 +84,10 @@ public class AnswerDAOImpl implements AnswerDAO {
                 return null;
             }
             else {
-                listOfAnswers.add(new Answer(rs.getString("answer"), rs.getBoolean("correct"), questionId));
+                listOfAnswers.add(new Answer(rs.getString("answer"), rs.getBoolean("correct")));
 
                 while(rs.next()){
-                    listOfAnswers.add(new Answer(rs.getString("answer"), rs.getBoolean("correct"), questionId));
+                    listOfAnswers.add(new Answer(rs.getString("answer"), rs.getBoolean("correct")));
                 }
                 return listOfAnswers;
             }

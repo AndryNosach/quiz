@@ -1,8 +1,9 @@
 package dao;
 
 import dao.connector.DBConnector;
-import entity.QuizTmp;
+import entity.Quiz;
 import entity.Subject;
+import org.apache.log4j.Logger;
 import service.SubjectService;
 
 import java.sql.*;
@@ -11,45 +12,41 @@ import java.util.List;
 
 public class QuizDAOImpl implements QuizDAO {
 
+    private static final Logger logger = Logger.getLogger(QuizDAOImpl.class);
+
     @Override
-    public int addQuiz(QuizTmp quiz) {
+    public int addQuiz(Quiz quiz, int subjId) {
         Connection con = DBConnector.getConnection();
 
-        Subject subj = quiz.getSubject();
-        SubjectService ss = new SubjectService();
-        int subjId = ss.getIdByName(subj.getSubjectName());
-
-        //Если в таблице subjects нет такой темы, добавляем ее
-        if (subjId == -1){
-            subjId = ss.addSubject(subj);
-        }
 
         try {
             String query = "INSERT into quizzies (theme, author, subjects_id)  VALUES (?, ?, ?)";
-            PreparedStatement ps = con.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, quiz.getTheme());
             ps.setString(2, quiz.getAuthor());
             ps.setInt(3, subjId);
 
             ps.executeUpdate();
 
+            ResultSet rs = ps.getGeneratedKeys();
+            int quizId = -1;
+            if(rs.next())
+            {
+                quizId = rs.getInt(1);
+            }
+
+            logger.info("Inserted quiz, id ="+ quizId);
+
+            return quizId;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        try (Statement stmt = con.createStatement()) {
-
-            ResultSet rs = stmt.executeQuery("SELECT LAST_INSERT_ID()");
-            return rs.getInt("LAST_INSERT_ID()");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return -1;
     }
 
     @Override
-    public QuizTmp getQuiz(int id) {
+    public Quiz getQuiz(int id) {
         Connection  conn = DBConnector.getConnection();
 
         try {
@@ -66,7 +63,7 @@ public class QuizDAOImpl implements QuizDAO {
                 SubjectService ss = new SubjectService();
                 Subject subj = ss.getSubject(rs.getInt("subjects_id"));
 
-                return new QuizTmp(subj, rs.getString("theme"), rs.getString("author"));
+                return new Quiz(subj, rs.getString("theme"), rs.getString("author"));
             }
 
         } catch (SQLException e) {
@@ -76,9 +73,9 @@ public class QuizDAOImpl implements QuizDAO {
     }
 
     @Override
-    public List<QuizTmp> getAllQuizzies() {
+    public List<Quiz> getAllQuizzies() {
         Connection  conn = DBConnector.getConnection();
-        List<QuizTmp> listOfQuizzies = new ArrayList<>();
+        List<Quiz> listOfQuizzies = new ArrayList<>();
         SubjectService ss = new SubjectService();
 
         try {
@@ -91,11 +88,11 @@ public class QuizDAOImpl implements QuizDAO {
             }
             else {
                 Subject subj = ss.getSubject(rs.getInt("subjects_id"));
-                listOfQuizzies.add(new QuizTmp(subj, rs.getString("theme"), rs.getString("author")));
+                listOfQuizzies.add(new Quiz(subj, rs.getString("theme"), rs.getString("author")));
 
                 while (rs.next()){
                     subj = ss.getSubject(rs.getInt("subjects_id"));
-                    listOfQuizzies.add(new QuizTmp(subj, rs.getString("theme"), rs.getString("author")));
+                    listOfQuizzies.add(new Quiz(subj, rs.getString("theme"), rs.getString("author")));
                 }
 
                 return listOfQuizzies;

@@ -8,9 +8,9 @@ import java.util.List;
 
 public class QuestionService {
 
-    public int addQuestion(Question question) {
+    public int addQuestion(Question question, int quizId) {
         QuestionDAO qd = new QuestionDAOImpl();
-        return qd.addQuestion(question);
+        return qd.addQuestion(question, quizId);
     }
 
     public Question getQuestion(int id) {

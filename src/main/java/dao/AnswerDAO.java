@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface AnswerDAO {
 
-    public int addAnswer(Answer answer);
+    public int addAnswer(Answer answer, int questionId);
 
     public Answer getAnswer(int id);
 

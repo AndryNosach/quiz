@@ -2,6 +2,7 @@ package dao;
 
 import dao.connector.DBConnector;
 import entity.Subject;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,29 +10,33 @@ import java.util.List;
 
 public class SubjectDAOImpl implements SubjectDAO{
 
+    private static final Logger logger = Logger.getLogger(SubjectDAOImpl.class);
+
     @Override
-    public int addSubject(Subject subject) {
+    public int addSubject(Subject subj) {
         Connection con = DBConnector.getConnection();
         try {
-            String query = "INSERT into SUBJECTS subject VALUES ?";
-            PreparedStatement ps = con.prepareStatement(query);
-            ps.setString(1, subject.getSubjectName());
+            String query = "INSERT into subjects (subject) VALUES (?)";
+            PreparedStatement ps = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, subj.getSubjectName());
 
             ps.executeUpdate();
 
+            ResultSet rs = ps.getGeneratedKeys();
+            int subjId = -1;
+            if(rs.next())
+            {
+                subjId = rs.getInt(1);
+            }
+
+            logger.info("Inserted subj id ="+ subjId);
+
+            return subjId;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        try (Statement stmt = con.createStatement()) {
-
-            ResultSet rs = stmt.executeQuery("SELECT LAST_INSERT_ID()");
-            return rs.getInt("LAST_INSERT_ID()");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return -1;
     }
 
     @Override

@@ -58,6 +58,11 @@
     <servlet-class>servlet.RegisterServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>Question</servlet-name>
+    <servlet-class>servlet.QuestionAddServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>ListOfQuizzes</servlet-name>
     <url-pattern>/list</url-pattern>
@@ -86,6 +91,11 @@
   <servlet-mapping>
     <servlet-name>Register</servlet-name>
     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Question</servlet-name>
+    <url-pattern>/question</url-pattern>
   </servlet-mapping>
 
 </web-app>
