@@ -60,5 +60,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.16.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:2.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-dao:2.0.6" level="project" />
   </component>
 </module>

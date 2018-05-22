@@ -7,57 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d261fd75-e27f-4899-aa37-12f258e1299f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_dao_2_0_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_2_0_6.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/quiz_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/quiz_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/quiz.iml" afterPath="$PROJECT_DIR$/.idea/quiz.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/QuestionDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/QuestionDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/QuizDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/QuizDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/SubjectDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/SubjectDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filters/AuthorizationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/filters/AuthorizationFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AnswerService.java" afterPath="$PROJECT_DIR$/src/main/java/service/AnswerService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/QuestionService.java" afterPath="$PROJECT_DIR$/src/main/java/service/QuestionService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/QuizService.java" afterPath="$PROJECT_DIR$/src/main/java/service/QuizService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/SubjectService.java" afterPath="$PROJECT_DIR$/src/main/java/service/SubjectService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/builder/QuizBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/service/builder/QuizBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/QuestionAddServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/QuestionAddServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/QuizAddServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/QuizAddServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/QuizDeleteServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/QuizDeleteServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/QuizListServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/QuizListServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/ContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/listeners/ContextListener.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/AnswerDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/AnswerDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/QuestionDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/QuestionDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/QuizDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/QuizDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/SubjectDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/SubjectDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filters/AuthorizationFilter.class" afterPath="$PROJECT_DIR$/target/classes/filters/AuthorizationFilter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/AnswerService.class" afterPath="$PROJECT_DIR$/target/classes/service/AnswerService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/QuestionService.class" afterPath="$PROJECT_DIR$/target/classes/service/QuestionService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/QuizService.class" afterPath="$PROJECT_DIR$/target/classes/service/QuizService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/SubjectService.class" afterPath="$PROJECT_DIR$/target/classes/service/SubjectService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/builder/QuizBuilder.class" afterPath="$PROJECT_DIR$/target/classes/service/builder/QuizBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QuestionAddServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/QuestionAddServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QuizAddServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/QuizAddServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QuizDeleteServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/QuizDeleteServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QuizListServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/QuizListServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/RegisterServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/AnswerDAOImpl.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/AnswerDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/QuestionDAOImpl.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/QuestionDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/QuizDAOImpl.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/QuizDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/SubjectDAOImpl.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/SubjectDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAOImpl.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAOImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/filters/AuthorizationFilter.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/filters/AuthorizationFilter.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/AnswerService.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/AnswerService.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/QuestionService.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/QuestionService.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/QuizService.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/QuizService.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/SubjectService.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/SubjectService.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/builder/QuizBuilder.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/service/builder/QuizBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuestionAddServlet.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuestionAddServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizAddServlet.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizAddServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizDeleteServlet.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizDeleteServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizListServlet.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/QuizListServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/servlet/RegisterServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/listeners/ContextListener.class" afterPath="$PROJECT_DIR$/target/classes/listeners/ContextListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/listeners/ContextListener.class" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/classes/listeners/ContextListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/simple-tests-1.0-SNAPSHOT/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,71 +35,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuizListServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/QuizListServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changelog-db.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changelog-db.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/changelog-db.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1205">
+            <state relative-caret-position="374">
               <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImpl.java">
+      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-474">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <marker date="1526868600653" expanded="true" signature="536:603" ph="INSERT into answers... " />
-                <marker date="1526868600653" expanded="true" signature="1398:1458" ph="SELECT answe... answers" />
-                <marker date="1526868600653" expanded="true" signature="2172:2230" ph="SELECT answe... questions" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuizDAOImpl.java">
+      <file leaf-file-name="ContextListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/ContextListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="82" column="54" lean-forward="false" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
-              <folding>
-                <marker date="1526871705251" expanded="true" signature="674:741" ph="INSERT into quizzies... " />
-                <marker date="1526871705251" expanded="true" signature="1511:1570" ph="SELECT autho... quizzies" />
-                <marker date="1526871705251" expanded="true" signature="2296:2318" ph="SELECT * FRO... quizzies" />
-                <marker date="1526871705251" expanded="true" signature="3389:3410" ph="DELETE from quizzies... " />
-                <marker date="1526871705251" expanded="true" signature="3389:3420" ph="DELETE from quizzies... " />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="374">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthorizationFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/filters/AuthorizationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -145,12 +108,12 @@
       <file leaf-file-name="QuestionDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuestionDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
+            <state relative-caret-position="17">
               <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
-                <marker date="1526868600878" expanded="true" signature="544:596" ph="INSERT into questions... " />
-                <marker date="1526868600878" expanded="true" signature="1339:1387" ph="SELECT issue... questions" />
-                <marker date="1526868600878" expanded="true" signature="2040:2084" ph="SELECT issue... questions" />
+                <marker date="1526987594634" expanded="true" signature="544:596" ph="INSERT into questions... " />
+                <marker date="1526987594634" expanded="true" signature="1339:1387" ph="SELECT issue... questions" />
+                <marker date="1526987594634" expanded="true" signature="2040:2084" ph="SELECT issue... questions" />
               </folding>
             </state>
           </provider>
@@ -166,27 +129,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubjectDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/SubjectDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <marker date="1526868600992" expanded="true" signature="521:562" ph="INSERT into subjects... " />
-                <marker date="1526868600992" expanded="true" signature="1263:1303" ph="SELECT subje... subjects" />
-                <marker date="1526868600992" expanded="true" signature="1939:1961" ph="SELECT * FRO... subjects" />
-                <marker date="1526868600992" expanded="true" signature="2690:2730" ph="SELECT id FR... subjects" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuizBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/builder/QuizBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="901">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <marker date="1526987594649" expanded="true" signature="2625:2631" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -239,10 +189,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/view/list-of-quizzes.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/dao/QuizDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/changelog-db.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/ContextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/UserDAOImpl.java" />
@@ -262,6 +209,9 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/QuizDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/builder/QuizBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/ContextListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -294,7 +244,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="140" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -318,6 +268,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,14 +295,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
@@ -423,14 +368,29 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-tests-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-tests-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -535,7 +495,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.2" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -644,11 +604,12 @@
       <workItem from="1527175752451" duration="1343000" />
       <workItem from="1527177129375" duration="1620000" />
       <workItem from="1526867928394" duration="4382000" />
+      <workItem from="1526987630094" duration="2366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74630000" />
+    <option name="totallyTimeSpent" value="76996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +621,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.5114613" order="7" side_tool="true" content_ui="tabs" />
@@ -680,10 +641,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.49426934" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43213296" sideWeight="0.49426934" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43134534" sideWeight="0.49426934" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.49713466" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.49713466" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28438395" sideWeight="0.49445984" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28791773" sideWeight="0.49445984" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27578798" sideWeight="0.5055402" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27578798" sideWeight="0.5055402" order="2" side_tool="true" content_ui="tabs" />
@@ -806,13 +767,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/PreparedStatement.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Quiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -885,19 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
-          <folding>
-            <element signature="e#1093#1098#0" expanded="false" />
-            <element signature="e#1120#1125#0" expanded="false" />
-            <element signature="e#1159#1164#0" expanded="false" />
-            <element signature="e#1191#1196#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-274">
@@ -917,25 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/ContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <marker date="1527178747444" expanded="true" signature="704:772" ph="INSERT into USERS... " />
-            <marker date="1527178747444" expanded="true" signature="1439:1500" ph="SELECT login... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,14 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/AuthorizationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1022,14 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="304" column="9" lean-forward="false" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Map.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/QuestionAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -1040,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/QuizListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
+        <state relative-caret-position="119">
           <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
@@ -1048,52 +955,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuizDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="82" column="54" lean-forward="false" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+        <state relative-caret-position="1241">
+          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
           <folding>
-            <marker date="1526871705251" expanded="true" signature="674:741" ph="INSERT into quizzies... " />
-            <marker date="1526871705251" expanded="true" signature="1511:1570" ph="SELECT autho... quizzies" />
-            <marker date="1526871705251" expanded="true" signature="2296:2318" ph="SELECT * FRO... quizzies" />
-            <marker date="1526871705251" expanded="true" signature="3389:3410" ph="DELETE from quizzies... " />
-            <marker date="1526871705251" expanded="true" signature="3389:3420" ph="DELETE from quizzies... " />
+            <marker date="1526987594634" expanded="true" signature="2253:3239" ph="{...}" />
+            <marker date="1526987594634" expanded="true" signature="3290:3634" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/SubjectDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
+        <state relative-caret-position="68">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <marker date="1526868600992" expanded="true" signature="521:562" ph="INSERT into subjects... " />
-            <marker date="1526868600992" expanded="true" signature="1263:1303" ph="SELECT subje... subjects" />
-            <marker date="1526868600992" expanded="true" signature="1939:1961" ph="SELECT * FRO... subjects" />
-            <marker date="1526868600992" expanded="true" signature="2690:2730" ph="SELECT id FR... subjects" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
+        <state relative-caret-position="68">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <marker date="1526868600653" expanded="true" signature="536:603" ph="INSERT into answers... " />
-            <marker date="1526868600653" expanded="true" signature="1398:1458" ph="SELECT answe... answers" />
-            <marker date="1526868600653" expanded="true" signature="2172:2230" ph="SELECT answe... questions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuestionDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <marker date="1526868600878" expanded="true" signature="544:596" ph="INSERT into questions... " />
-            <marker date="1526868600878" expanded="true" signature="1339:1387" ph="SELECT issue... questions" />
-            <marker date="1526868600878" expanded="true" signature="2040:2084" ph="SELECT issue... questions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,32 +990,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/builder/QuizBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="901">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1526987594649" expanded="true" signature="2625:2631" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuestionDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <marker date="1526987594634" expanded="true" signature="544:596" ph="INSERT into questions... " />
+            <marker date="1526987594634" expanded="true" signature="1339:1387" ph="SELECT issue... questions" />
+            <marker date="1526987594634" expanded="true" signature="2040:2084" ph="SELECT issue... questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/changelog-db.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/changelog-db.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/filters/AuthorizationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1205">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding />
         </state>
       </provider>
