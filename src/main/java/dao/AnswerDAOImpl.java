@@ -21,7 +21,7 @@ public class AnswerDAOImpl implements AnswerDAO {
             String query = "INSERT into answers (answer, correct, question_id) VALUES (?, ?, ?)";
             PreparedStatement ps = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, answer.getAnswer());
-            ps.setBoolean(2, answer.isCorrect());
+            ps.setBoolean(2, answer.isCorrectness());
             ps.setInt(3, questionId);
 
 

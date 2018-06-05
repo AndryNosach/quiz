@@ -6,6 +6,7 @@
 
     <context:component-scan base-package="\*"/>
 
+
     <bean id="liquibase" class="liquibase.integration.spring.SpringLiquibase">
         <property name="dataSource" ref="dataSource" />
         <property name="changeLog" value="classpath:changelog-db.xml" />

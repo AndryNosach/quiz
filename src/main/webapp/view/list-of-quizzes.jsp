@@ -51,7 +51,7 @@
                     </thead>
                     <tbody>
                     <c:set var = "id" scope = "page" value = "${1}"/>
-                        <c:forEach var="quiz" items="${quizzes}">
+                        <c:forEach var="quiz" items="${quizzies}">
                             <tr>
                                 <td>${id} </td>
                                 <td>${quiz.getSubject().getSubjectName()}</td>
@@ -63,7 +63,7 @@
                                             $(document).ready(function () {
                                                 $(".delete${id}").click(function () {
                                                     $.ajax({
-                                                        type: "delete",
+                                                        type: "get",
                                                         url:"/delete?id=${quiz.getId()}"
                                                     })
                                                 })

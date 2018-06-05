@@ -2,10 +2,9 @@ package service;
 
 import dao.AnswerDAO;
 
-import dao.AnswerDAOImpl;
 import entity.Answer;
-import entity.Question;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -14,18 +13,19 @@ import java.util.List;
 public class AnswerService {
 
     @Autowired
-    AnswerDAO ad;
+    @Qualifier("answerHibernateDao")
+    AnswerDAO answerDAO;
 
     public int addAnswer(Answer answer, int questId) {
-        return ad.addAnswer(answer, questId);
+        return answerDAO.addAnswer(answer, questId);
     }
 
     public Answer getAnswer(int id) {
-        return ad.getAnswer(id);
+        return answerDAO.getAnswer(id);
     }
 
     public List<Answer> getAnswersForQuestion(int questionId){
-        return ad.getAnswersForQuestion(questionId);
+        return answerDAO.getAnswersForQuestion(questionId);
     }
 
 }
