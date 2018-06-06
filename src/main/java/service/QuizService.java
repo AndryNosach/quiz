@@ -15,8 +15,8 @@ public class QuizService {
     @Qualifier("quizHibernateDao")
     QuizDAO quizDAO;
 
-    public int addQuiz(Quiz quiz, int subjId){
-         return quizDAO.addQuiz(quiz, subjId);
+    public int addQuiz(Quiz quiz){
+         return quizDAO.addQuiz(quiz);
     }
 
     public Quiz getQuiz (int id){

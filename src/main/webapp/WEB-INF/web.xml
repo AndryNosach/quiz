@@ -13,10 +13,6 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-
-  <listener>
-    <listener-class>listeners.ContextListener</listener-class>
-  </listener>
   
   <!--  Filters -->
     <filter>

@@ -103,7 +103,7 @@ public class QuizController {
         return "questions-page";
     }
 
-    @RequestMapping(value = "delete")
+    @RequestMapping( value = "delete")
     public String deleteQuiz(WebRequest req){
         logger.info("deleting quiz");
         int id = Integer.parseInt(req.getParameter("id"));

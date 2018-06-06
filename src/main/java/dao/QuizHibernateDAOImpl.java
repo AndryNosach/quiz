@@ -20,9 +20,8 @@ public class QuizHibernateDAOImpl implements QuizDAO{
     Logger logger = Logger.getLogger(QuizHibernateDAOImpl.class);
 
 
-    //ToDo Need to delete @param subjId
     @Override
-    public int addQuiz(Quiz quiz, int subjId) {
+    public int addQuiz(Quiz quiz) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.save(quiz);

@@ -1,7 +1,6 @@
 package service;
 
 import dao.UserDAO;
-import dao.UserDAOImpl;
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -7,8 +7,6 @@ import entity.Subject;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import service.AnswerService;
-import service.QuestionService;
 import service.QuizService;
 import service.SubjectService;
 
@@ -28,8 +26,6 @@ public class QuizBuilder {
     private QuizService quizService;
     @Autowired
     private SubjectService subjectService;
-
-    //ToDo delete AnswerService and QuestionService from project
 
     public void addTheme (String theme){
         logger.info("Added theme "+theme+ " to QuizBuilder");
@@ -85,7 +81,7 @@ public class QuizBuilder {
        quiz.setSubject(subj);
 
        //4. Finally! Saving quiz to DB
-       quizService.addQuiz(quiz, 0);
+       quizService.addQuiz(quiz);
 
    }
 
