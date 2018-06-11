@@ -19,7 +19,7 @@
     <div class="row">
 
         <jsp:include page="parts/sidebar.jsp">
-            <jsp:param name="cur" value="list"/>
+            <jsp:param name="currentPage" value="list"/>
         </jsp:include>
 
         <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
@@ -47,17 +47,7 @@
                                 <td>${quiz.getTheme()}</td>
                                 <td>${quiz.getAuthor()}</td>
                                 <td>
-                                    <a  class="delete${id}" href="list">Delete</a>
-                                        <script>
-                                            $(document).ready(function () {
-                                                $(".delete${id}").click(function () {
-                                                    $.ajax({
-                                                        type: "get",
-                                                        url:"/delete?id=${quiz.getId()}"
-                                                    })
-                                                })
-                                            })
-                                        </script>
+                                    <a  class="delete${id}" href="/delete/${quiz.getId()}">Delete</a>
                                 </td>
                                 <c:set var="id" scope="page" value="${id+1}"/>
                              </tr>

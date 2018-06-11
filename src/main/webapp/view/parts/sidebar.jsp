@@ -4,22 +4,21 @@
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
             <c:choose>
-                <c:when test="${cur == 'list'}">
+                <c:when test="${param.currentPage eq 'list'}">
                     <a class="nav-link active" href="list">Overview<span class="sr-only">(current)</span></a>
                 </c:when>
                 <c:otherwise>
-                    <h1>${cur}er</h1>
-                    <a class="nav-link active" href="list">Overview</a>
+                    <a class="nav-link" href="list">Overview</a>
                 </c:otherwise>
             </c:choose>
         </li>
         <li class="nav-item">
             <c:choose>
-                <c:when test="${cur eq 'add'}">
+                <c:when test="${param.currentPage eq 'add'}">
                     <a class="nav-link active" href="list">Add Quiz<span class="sr-only">(current)</span></a>
                 </c:when>
                 <c:otherwise>
-                    <a class="nav-link" href="list">Add Quiz</a>
+                    <a class="nav-link" href="/add">Add Quiz</a>
                 </c:otherwise>
             </c:choose>
         </li>
