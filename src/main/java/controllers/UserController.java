@@ -61,7 +61,7 @@ public class UserController {
             logger.info("User "+login+" found in db and authorized ");
             session.setAttribute("authorized", "true");
             session.setAttribute("login", login);
-            return "redirect:list";
+            return "redirect:available";
         }
         else {
             logger.info("Wrong password for user "+login);

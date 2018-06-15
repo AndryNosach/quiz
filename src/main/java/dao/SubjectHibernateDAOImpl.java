@@ -49,6 +49,7 @@ public class SubjectHibernateDAOImpl implements SubjectDAO {
 
     @Override
     public List<Subject> getAllSubjects() {
+        session.clear();
         Transaction transaction = session.beginTransaction();
         Query query = session.createQuery("from Subject");
         List list = query.list();

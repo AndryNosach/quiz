@@ -47,6 +47,8 @@
                                 <td>${quiz.getTheme()}</td>
                                 <td>${quiz.getAuthor()}</td>
                                 <td>
+                                    <a  href="/pass/${quiz.getId()}">Pass</a>
+                                    |
                                     <a  class="delete${id}" href="/delete/${quiz.getId()}">Delete</a>
                                 </td>
                                 <c:set var="id" scope="page" value="${id+1}"/>
@@ -57,7 +59,7 @@
             </div>
 
             <div class = "add">
-                <input type="submit" name="add" value="Add" onclick="location.href='add'">
+                <input type="submit" class="btn btn-primary" name="add" value="Add" onclick="location.href='add'">
             </div>
         </main>
     </div>
